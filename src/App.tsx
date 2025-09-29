@@ -1,11 +1,14 @@
 import './style/App.css'
-import Cabeca from './components/header'
+import Cabeca from './components/Header'
+import Homere from './home'
+
 const App = () => {
 
   return (
-    <header>
-  <Cabeca/>
+    <header className='header'>
+    <Cabeca/>
     </header>
+      
     
   )
 }
