@@ -1,15 +1,11 @@
-import React from 'react';
+import './style/header.css'
 
-interface HeaderProps {
-  title: string;
+function Header() {
+    return(
+        <header>
+            <h1>Tasty Cuisine</h1>
+        </header>
+    )
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
-  return (
-    <header>
-      <h1>{title}</h1>
-    </header>
-  );
-};
-
-export default Header;
+export default Header
