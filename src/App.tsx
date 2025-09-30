@@ -1,33 +1,31 @@
 import './App.css'
-import Receitas from './components/Receitas'
-import Perfil from './components/Perfil'
+import Logo from './Mídia.jpg'
 
 function App () {
+  
 
   return (
-      <div className='head'>
-            <h1 className='Title'>Tasty Cuisine</h1>
-
-            <div className='header-options'>
-              <nav>
-                <ul>
-                <li className='options'><a className='item' href=''>Home</a></li>
+    <div>
+      <header className='head'>
+            <div className='logo'>
+              <img src= {Logo} alt="aaa" />
+              <h1 className='Title'>Tasty Cuisine</h1>
+            </div>
+            <nav className='nav-bar'>
+              <ul>
+                <li className='options'><a  className='item'  href=''>Home</a></li>
                 <li className='options'><a className='item'  href=''>Receitas</a></li>
+                <li className='options'><a className='item'  href=''>Restaurantes</a></li>
                 <li className='options'><a className='item'  href=''>Perfil</a></li>
                 </ul>
-              </nav>
-            </div>
-
-
-
-      <div className='Receitas'>
-        <Receitas/>
+            </nav>
+        </header> 
       </div>
-      <div className='Perfil'>
-        <Perfil/>
-      </div>
-
-    </div>
+        
+      
+        
+       
+    
   )
 }
 

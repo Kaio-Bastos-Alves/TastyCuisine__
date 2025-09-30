@@ -1,5 +1,9 @@
+import './Home.css'
+
 function Home (){
-    return <h1>Pagina em desenvolvimento</h1>
+    return (
+    <input className="input" name="text" placeholder="Pesquise por receitas..." type="search"></input>
+    )
 }
 
 export default Home
