@@ -1,0 +1,5 @@
+function Perfil (){
+    return <h1>Pagina em desenvolvimento</h1>
+}
+
+export default Perfil
