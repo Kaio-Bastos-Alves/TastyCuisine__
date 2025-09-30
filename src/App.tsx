@@ -1,15 +1,12 @@
-import './style/App.css'
-import Cabeca from './components/Header'
-import Homere from './home'
+import './App.css'
+import ListGroup from './components/ListGroup'
 
-const App = () => {
+function App () {
 
   return (
-    <header className='header'>
-    <Cabeca/>
-    </header>
-      
-    
+    <div>
+      <ListGroup/>
+    </div>
   )
 }
 
