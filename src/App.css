@@ -1,5 +1,5 @@
 .Title {
-  color: rgb(62, 204, 145);
+  color: rgb(216, 113, 65);
   font-family: Georgia, "Times New Roman", Times, serif;
   display: inline;
 }
@@ -9,8 +9,8 @@ header {
   justify-content: space-between;
   gap: 20px;
   align-items: center;
-  padding: 10px 20px;
-  background: #dbebd7;
+  padding: 20px 40px;
+  background: #ffc787;
 }
 
 nav ul {
@@ -23,7 +23,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: rgb(62, 204, 145);
+  color: rgb(216, 113, 65);
   font-weight: bold;
 }
 

@@ -1,5 +1,5 @@
 import './App.css'
-import Logo from './Mídia.jpg'
+import Login from './components/Login'
 
 function App () {
   
@@ -8,7 +8,6 @@ function App () {
     <div>
       <header className='head'>
             <div className='logo'>
-              <img src= {Logo} alt="aaa" />
               <h1 className='Title'>Tasty Cuisine</h1>
             </div>
             <nav className='nav-bar'>
@@ -20,6 +19,8 @@ function App () {
                 </ul>
             </nav>
         </header> 
+
+        <Login/>
       </div>
         
       

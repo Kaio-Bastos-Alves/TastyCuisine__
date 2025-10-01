@@ -1,0 +1,17 @@
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(1);
+  max-width: 300px;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.input {
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.page {
+    text-align: center;  
+}
