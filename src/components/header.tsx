@@ -5,31 +5,13 @@ function Header() {
   const [isLogged, setIsLogged] = useState(false);
   useEffect(() => {
     const isLogged = localStorage.getItem("isLogged");
+    
     setIsLogged(isLogged === "true");
   }, []);
   
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY < lastScrollY) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
-      setLastScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
 
   return (
-    <header className={`head ${showHeader ? "visible" : "hidden"}`}>
+    <header>
       <div className="logo">
         <h1 className="Title">Tasty Cuisine</h1>
       </div>

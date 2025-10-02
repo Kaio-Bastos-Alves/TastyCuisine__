@@ -13,14 +13,6 @@ header {
   z-index: 1000;
 }
 
-header.visible {
-  transform: translateY(0);
-}
-
-header.hidden {
-  transform: translateY(-100%);
-}
-
 .Title {
   color: rgb(216, 113, 65);
   font-family: Georgia, "Times New Roman", Times, serif;
