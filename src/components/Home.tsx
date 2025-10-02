@@ -1,8 +1,19 @@
-import './Home.css'
-
+import './css/Home.css'
+import Header from './header'
+    
 function Home (){
     return (
-    <input className="input" name="text" placeholder="Pesquise por receitas..." type="search"></input>
+      <div className='full-page'>
+        <header>
+          <Header />
+        </header>
+
+        <main>
+  
+  <h1>Comida de verdade,</h1>
+  <h3>Sabor de Sobra</h3>
+        </main>
+      </div>
     )
 }
 
