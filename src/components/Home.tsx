@@ -2,6 +2,7 @@ import './css/Home.css'
 import Header from './header'
     
 function Home (){
+  
     return (
   <div className='full-page'>
         <header>
@@ -14,11 +15,11 @@ function Home (){
         <h2>Sabor de Sobra</h2>
         <h3>Receitas deliciosas criadas com amor e diversão!</h3>
         <div className="buttons">
+
+            <button onClick={() => alert("Receitas")}>Ver Receitas
+              </button>
+            <button onClick={() => alert("Restaurantes")}>Ver Restaurantes</button>
         
-            <button onClick={(alert("Pagina em desenvolvimento"))}>Ver Receitas</button>
-            <button>Ver Restaurantes</button>
-          
-          
         </div>
       </div>
       

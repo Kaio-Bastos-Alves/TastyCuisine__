@@ -11,7 +11,7 @@ header {
   display: flex;
   flex-direction: column;
   min-width: 1800px;
-  min-height: 90vh;
+  max-height: 70vh;
   background-color: #f8d5ad;
 }
 
