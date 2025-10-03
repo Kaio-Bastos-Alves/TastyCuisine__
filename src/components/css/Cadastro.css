@@ -113,6 +113,10 @@ body {
   text-decoration: none;
 }
 
+.sign:hover {
+  background-color: rgb(173, 75, 29);
+}
+
 .signup {
   margin-top: 5px;
   text-align: center;

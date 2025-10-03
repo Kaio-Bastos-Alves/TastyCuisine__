@@ -16,9 +16,9 @@ function Home (){
         <h3>Receitas deliciosas criadas com amor e diversão!</h3>
         <div className="buttons">
 
-            <button onClick={() => alert("Receitas")}>Ver Receitas
+            <button onClick={() => window.location.href = "/receitas"}>Ver Receitas
               </button>
-            <button onClick={() => alert("Restaurantes")}>Ver Restaurantes</button>
+            <button onClick={() => window.location.href = "/restaurantes"}>Ver Restaurantes</button>
         
         </div>
       </div>

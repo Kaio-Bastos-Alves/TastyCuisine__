@@ -29,9 +29,9 @@ function Header() {
 
             
           }>Home</a></li>
-          <li className="options"><a className="item"  onClick={() => alert("Receitas")} href="">Receitas</a></li>
-          <li className="options"><a className="item"  onClick={() => alert("Restaurantes")} href="">Restaurantes</a></li>
-          <li className="options"><a className="item"  onClick={() => alert("Perfil")} href="/login">Perfil</a></li>
+          <li className="options"><a className="item" href="/receitas">Receitas</a></li>
+          <li className="options"><a className="item" href="/restaurantes">Restaurantes</a></li>
+          <li className="options"><a className="item" href="/perfil">Perfil</a></li>
         </ul>
       </nav>
     </header>

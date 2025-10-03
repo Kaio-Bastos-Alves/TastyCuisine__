@@ -1,7 +1,6 @@
 import './css/Cadastro.css'
  
 function Cadastro() {
- 
 
   return (
     <div className="form-container">
@@ -58,14 +57,14 @@ function Cadastro() {
           if (nome.length == 0){
             alert("Preencha seu nome");
           }
+          if (usuário.length == 0) {
+            alert("Preencha seu nome de usuário");
+          }
           if (email.length == 0){
             alert("Preencha seu email");
           }
           if (data.length == 0){
             alert("Preencha sua data de nascimento");
-          }
-          if (usuário.length == 0) {
-            alert("Preencha seu nome de usuário");
           }
           if (password.length < 8) {
             alert("A senha deve ter no mínimo 8 caracteres");
@@ -76,7 +75,7 @@ function Cadastro() {
           if (password != cpassword && password.length >= 8 && cpassword.length != 0  ) {
             alert("As senhas não coincidem");
           }
-          if (password == cpassword && password.length >= 8 && cpassword.length != 0 && usuário.length != 0 && nome.length == 0 && email.length == 0 && data.length == 0) {
+          if (password === cpassword && password.length >= 8 && usuário.length > 0 && nome.length > 0 && email.length > 0) {
             alert("Cadastro realizado com sucesso!");
     localStorage.setItem("usuário", usuário)
     localStorage.setItem("nome", nome);
@@ -85,7 +84,7 @@ function Cadastro() {
     localStorage.setItem("senha", password);
     const IsLogged = true;
     localStorage.setItem("isLogged", JSON.stringify(IsLogged));
-   window.location.href = "/home";
+    window.location.href = "/home";
           }
         }}>
           Cadastrar!

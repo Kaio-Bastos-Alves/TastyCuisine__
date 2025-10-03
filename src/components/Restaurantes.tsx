@@ -1,7 +1,7 @@
 import Header from "./header"
-import './css/Perfil.css'
+import './css/Restaurantes.css'
 
-function Perfil (){
+function Restaurantes (){
     
     return (
 <div>
@@ -11,4 +11,4 @@ function Perfil (){
     )
 }
 
-export default Perfil
+export default Restaurantes
