@@ -1,5 +1,6 @@
 import Header from "./header"
 import './css/Restaurantes.css'
+import React from 'react';
 
 function Restaurantes (){
     

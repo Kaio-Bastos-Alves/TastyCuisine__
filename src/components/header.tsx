@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./css/header.css";
+import React from 'react';
 
 function Header() {
   const [isLogged, setIsLogged] = useState(false);
