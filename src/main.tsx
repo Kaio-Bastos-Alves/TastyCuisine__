@@ -9,6 +9,7 @@ import Header from './components/header.tsx'
 import Restaurantes from './components/Restaurantes.tsx'
 import Perfil from './components/Perfil.tsx'
 import Receitas from './components/Receitas.tsx'
+import Publicadas from './components/Publicar.tsx';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -45,7 +46,10 @@ const router = createBrowserRouter([
 {
   path: "/receitas",
   element: <Receitas/>
-}	
+}	,{
+  path: "/publicar",
+  element: <Publicadas/>
+}
 ]);
 
 createRoot(document.getElementById('root')!).render(

@@ -6,6 +6,7 @@ function Perfil (){
   var Email = localStorage.getItem("email")
   var Data = localStorage.getItem("data")
   var Usuario = localStorage.getItem("usuário")
+  var Senha = localStorage.getItem("senha")
    return (
 <div>
     <Header/>
@@ -14,8 +15,8 @@ function Perfil (){
   <main className="perfil-container">
     <aside className="perfil-card">
       <div className="foto-perfil"></div>
-      <h2 id="sidebar-name">Luquinhas Fritadas</h2>
-      <p className="email" id="sidebar-email">ayrtonsenna@gmail.com</p>
+      <h2 id="sidebar-name">{Nome}</h2>
+      <p className="email" id="sidebar-email">{Email}</p>
       <div className="progresso">
         <p id="sidebar-progress-text">Progresso do Perfil (75%)</p>
         <div className="barra"><div className="preenchida" id="sidebar-progress-bar"></div></div>
@@ -37,15 +38,15 @@ function Perfil (){
       <div className="conteudo info ativa" id="info">
         <h3>Informações Pessoais</h3>
         <label>Nome Completo</label>
-        <input id="profile-fullname" type="text" value="Luquinhas Fritadas" />
+        <input id="profile-fullname" type="text" value={Nome} />
         <label>Nome de Usuário</label>
-        <input id="profile-username" type="text" value="luquinhasfritadas" />
+        <input id="profile-username" type="text" value={Usuario} />
         <label>Email</label>
-        <input id="profile-email" type="email" value="ayrtonsenna@gmail.com" />
+        <input id="profile-email" type="email" value={Email} />
         <label>Data de Nascimento</label>
-        <input id="profile-dob" type="date" />
+        <input id="profile-dob" type="date" value={Data} />
         <label>Senha</label>
-        <input id="profile-password" type="password" placeholder="Defina ou altere sua senha" />
+        <input id="profile-password" type="password" value={Senha} placeholder="Defina ou altere sua senha" />
         <label>Restrições Alimentares e Alergias</label>
         <input id="profile-restrictions" type="text" placeholder="Ex.: intolerância à lactose, alergia a amendoim" />
         <label>Dietas Favoritas (separe por vírgulas)</label>
