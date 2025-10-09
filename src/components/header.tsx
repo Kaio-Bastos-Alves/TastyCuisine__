@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./css/header.css";
+import React from "react";
 
 function Header() {
   const [isLogged, setIsLogged] = useState(false);
@@ -26,10 +27,19 @@ function Header() {
                 window.location.href = "/login";
               }
             }
-
-            
-          }>Home</a></li>
-          <li className="options"><a className="item" href="/receitas">Receitas</a></li>
+          }
+          >Home</a></li>
+          <li className="options"><a className="item" onClick={
+            () => {
+              if (isLogged) {
+                window.location.href = "/receitas";
+              } else {
+                alert("Você precisa estar logado para acessar a Home");
+                window.location.href = "/login";
+              }
+            }
+          }
+            href="/receitas">Receitas</a></li>
           <li className="options"><a className="item" href="/restaurantes">Restaurantes</a></li>
           <li className="options"><a className="item" href="/perfil">Perfil</a></li>
         </ul>
