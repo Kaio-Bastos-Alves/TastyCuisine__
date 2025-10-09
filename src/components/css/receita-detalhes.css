@@ -1,0 +1,203 @@
+.receita-detalhes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+.btn-voltar {
+  background: rgb(216, 113, 65);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.btn-voltar:hover {
+  background: rgb(202, 75, 16);
+}
+
+.receita-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.receita-imagem img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.receita-info h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.descricao {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.receita-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat .icon {
+  font-size: 1.2rem;
+}
+
+.receita-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-favorito {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-favorito.ativo {
+  background: #e74c3c;
+}
+
+.likes {
+  color: #666;
+}
+
+.receita-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.ingredientes, .modo-preparo {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.ingredientes h2, .modo-preparo h2 {
+  color: rgb(216, 113, 65);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.ingredientes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredientes li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.ingredientes li:before {
+  content: '✓';
+  color: #28a745;
+  margin-right: 0.5rem;
+}
+
+.modo-preparo ol {
+  padding-left: 1.5rem;
+}
+
+.modo-preparo li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.receita-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.receita-not-found h2 {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.receita-not-found button {
+  background: #9B5DE5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tag.rosa {
+  background: #F8BBDA;
+  color: #6C1E40;
+}
+
+.tag.verde {
+  background: #C8E6C9;
+  color: #2E7D32;
+}
+
+.tag.lilas {
+  background: #E1BEE7;
+  color: #7B1FA2;
+}
+
+.tag.lavanda {
+  background: #D1C4E9;
+  color: #512DA8;
+}
+
+.tag.roxo {
+  background: #B39DDB;
+  color: #4527A0;
+}
+
+@media (max-width: 768px) {
+  .receita-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .receita-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .receita-stats {
+    grid-template-columns: 1fr;
+  }
+}

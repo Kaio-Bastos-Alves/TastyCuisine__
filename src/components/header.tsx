@@ -23,7 +23,7 @@ function Header() {
               if (isLogged) {
                 window.location.href = "/home";
               } else {
-                alert("Você precisa estar logado para acessar a Home");
+                alert("Você precisa estar logado para acessar a Página");
                 window.location.href = "/login";
               }
             }
@@ -34,14 +34,34 @@ function Header() {
               if (isLogged) {
                 window.location.href = "/receitas";
               } else {
-                alert("Você precisa estar logado para acessar a Home");
+                alert("Você precisa estar logado para acessar à página");
                 window.location.href = "/login";
               }
             }
-          }
-            href="/receitas">Receitas</a></li>
-          <li className="options"><a className="item" href="/restaurantes">Restaurantes</a></li>
-          <li className="options"><a className="item" href="/perfil">Perfil</a></li>
+          }>Receitas</a></li>
+
+          <li className="options"><a className="item" onClick={
+            () => {
+              if (isLogged) {
+                window.location.href = "/restaurantes";
+              } else {
+                alert("Você precisa estar logado para acessar à página");
+                window.location.href = "/login";
+              }
+            }
+          }>Restaurantes</a></li>
+
+          <li className="options"><a className="item" onClick={
+            () => {
+              if (isLogged) {
+                window.location.href = "/perfil";
+              } else {
+                alert("Você precisa estar logado para acessar à página");
+                window.location.href = "/login";
+              }
+            }
+          }>Perfil</a></li>
+
         </ul>
       </nav>
     </header>

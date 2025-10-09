@@ -10,6 +10,7 @@ import Restaurantes from './components/Restaurantes.tsx'
 import Perfil from './components/Perfil.tsx'
 import Receitas from './components/Receitas.tsx'
 import Publicadas from './components/Publicar.tsx';
+import VerDetalhes from './components/VerDetalhesR.tsx'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
 }	,{
   path: "/publicar",
   element: <Publicadas/>
+},
+{
+  path: '/receitas/:id',
+  element: <VerDetalhes/>
 }
 ]);
 

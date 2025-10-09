@@ -91,7 +91,8 @@ const Receitas: React.FC = () => {
 
 
             </div>
-            <button className="ver-receita" onClick={() => alert('Página de detalhes em desenvolvimento')}>Ver Receita</button>
+  
+            <button className="ver-receita" onClick={() => window.location.href = (`/receitas/${r.id}`)}>Ver Receita</button>
 
           </article>
         ))}
